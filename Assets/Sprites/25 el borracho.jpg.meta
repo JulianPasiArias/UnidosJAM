@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d6ec2320487e9749966e6631982289f
+guid: 8303ef73acfdcec4bae2026b1d86d1f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -114,106 +114,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: loteriaCard_1_0
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 305
-        width: 49
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc67a9a82f37c394f9f854d50a525278
-      internalID: -451221778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loteriaCard_1_1
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 305
-        width: 47
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50ebc4b431384fc4f89a6bce1a46cc3f
-      internalID: 1462872000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loteriaCard_1_2
-      rect:
-        serializedVersion: 2
-        x: 185
-        y: 305
-        width: 47
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec458e29a5331974b8cb327617b0fb1d
-      internalID: 1986726074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loteriaCard_1_3
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 235
-        width: 160
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e478267c3252f3e41b4f337941536aa0
-      internalID: -1579330956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 48cccae0dec18c34cacdbf4c7caa777b
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      loteriaCard_1_3: -1579330956
-      loteriaCard_1_0: -451221778
-      loteriaCard_1_2: 1986726074
-      loteriaCard_1_1: 1462872000
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
