@@ -20,9 +20,21 @@ public class CardManager : MonoBehaviour
     {
         int randomN = Random.Range(0,listCartas.Count);
         string actualNameCard = listCartas[randomN].name;
-        //if (myLoteriaTable.Contains()){
 
-        //}
+        if (myLoteriaTable.Find(w => string.Equals(w.nameCard, "Gun"))) {
+            print("se encontro ya");
+        }
+        else
+        {
+            var cardT = Instantiate(cardPrefab);
+            //
+            Card currentcCard = cardT.GetComponent<Card>();
+            currentcCard.nameCard = listCartas[randomN].name;
+            currentcCard.imageCarta.sprite = listCartas[randomN];
+            currentcCard.imageCartaBack.sprite = listCartas[randomN];
+            //
+            myLoteriaTable.Add(currentcCard);
+        }
     }
     public void serchForMySprite(string nameSprite)
     {
