@@ -10,7 +10,6 @@ public class Card : MonoBehaviour
     public Image imageCarta,imageCartaBack;
     private void Start()
     {
-        //generateRandomCard();
     }
     public void generateCard(string name, Sprite sprite)
     {

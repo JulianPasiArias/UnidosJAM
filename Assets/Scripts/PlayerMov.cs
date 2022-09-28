@@ -115,5 +115,29 @@ public class PlayerMov : MonoBehaviour
     {
         readyToJump = true;
     }
-
+    private void OnTriggerEnter(Collider other){
+        if (other.gameObject.tag == "Card")
+        {
+            string cardName = other.gameObject.GetComponent<Card>().nameCard;
+            if (CardManager.ManagerCardInstance.myLoteriaTable.Find(w => string.Equals(w.nameCard, cardName)))
+            {
+                print("Encontro: " + cardName);
+                CardManager.ManagerCardInstance.currentLoteriaTable.Add(other.gameObject.GetComponent<Card>());
+                GameObject card = CardManager.ManagerCardInstance.listMyLoteriaTable.Find(w => string.Equals(w.sprite.name, cardName)).gameObject;
+                card.transform.Find("Piedra").gameObject.SetActive(true);
+                //
+                if (CardManager.ManagerCardInstance.currentLoteriaTable.Count == CardManager.ManagerCardInstance.myLoteriaTable.Count)
+                {
+                    CardManager.ManagerCardInstance.showWin();
+                    print("Encontro todas");
+                }
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                CardManager.ManagerCardInstance.showError();
+                print("esa no es weey");
+            }
+        }
+    }
 }

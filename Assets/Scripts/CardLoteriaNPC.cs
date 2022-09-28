@@ -26,6 +26,10 @@ public class CardLoteriaNPC : MonoBehaviour
 
     private void Update()
     {
+        if (CardManager.ManagerCardInstance.currentGameState == statesGame.gameOver)
+        {
+            Destroy(this.gameObject);
+        }
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         if (!playerInSightRange) Patroling();
